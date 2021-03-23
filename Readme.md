@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Станислав Гвоздь](https://up.htmlacademy.ru/adaptive/22/user/1355873).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
