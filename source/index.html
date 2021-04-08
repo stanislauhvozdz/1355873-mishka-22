@@ -165,5 +165,27 @@
       svg use html academy
     </a>
   </footer>
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="modal__form-choice-size" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="modal__fieldset">
+        <legend class="modal__legend">Выберите размер:</legend>
+        <label class="radio" aria-label="Размер S">
+          <input class="radio__input" type="radio" name="size">
+          <span class="radio__checkmark radio__checkmark--modal">S</span>
+        </label>
+        <label class="radio" aria-label="Размер M">
+          <input class="radio__input" type="radio" name="size">
+          <span class="radio__checkmark radio__checkmark--modal">M</span>
+        </label>
+        <label class="radio" aria-label="Размер L">
+          <input class="radio__input" type="radio" name="size">
+          <span class="radio__checkmark radio__checkmark--modal">L</span>
+        </label>
+      </fieldset>
+      <button class="modal__button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
+    </form>
+  </section>
+
 </body>
 </html>
