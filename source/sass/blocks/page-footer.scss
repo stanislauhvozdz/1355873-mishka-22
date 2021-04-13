@@ -1,0 +1,40 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+
+  @media (min-width: $tablet) {
+    flex-basis: 33.333%;
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    flex-basis: 33.333%;
+  }
+}
+
+.footer__academy-link {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    flex-basis: 33.333%;
+    text-align: right;
+  }
+}

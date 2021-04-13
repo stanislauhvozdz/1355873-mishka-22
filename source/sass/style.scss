@@ -1,1 +1,12 @@
-// Начните писать стили здесь
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+@import "variables.scss";
+@import "fonts.scss";
+@import "common.scss";
+@import "blocks/header.scss";
+@import "blocks/promo-block.scss";
+@import "blocks/product-week.scss";
+@import "blocks/about-us.scss";
+@import "blocks/customer-feedback.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/modal.scss";

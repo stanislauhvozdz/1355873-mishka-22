@@ -1,0 +1,22 @@
+.modal {
+  width: 320px;
+  padding: 28px 30px 46px;
+  border: 1px solid $white-200;
+  box-shadow: 0 5px 10px rgba($black, 0.25);
+  text-align: center;
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.modal__fieldset {
+  border: none;
+}
+
+.modal__legend {
+  font-size: 15px;
+}
