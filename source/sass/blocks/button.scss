@@ -1,0 +1,20 @@
+.button {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-primary;
+  padding: 14px;
+  border: 2px solid $color-primary;
+  transition: all 0.3s ease-in-out;
+  background-color: $white;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

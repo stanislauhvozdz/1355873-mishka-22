@@ -1,3 +1,7 @@
+.page-header {
+  border-bottom: 1px solid rgba($black, 0.2);
+}
+
 .page-header-container {
   display: flex;
   flex-direction: column;
@@ -6,10 +10,12 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     flex-wrap: wrap;
+    text-align: center;
   }
 
   @media (min-width: $desktop) {
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -17,14 +23,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 22px 0;
+
+  @media (min-width: $tablet) {
+    padding: 20px 0;
+  }
 
   @media (min-width: $desktop) {
     order: 2;
+    padding: 7px 0;
   }
-}
-
-.page-header__logo {
-  margin: 26px 0;
 }
 
 .page-header__nav-toggle {
@@ -93,7 +101,7 @@
     order: 3;
     position: absolute;
     left: 50px;
-    bottom: -70px;
+    bottom: -72px;
     z-index: 5;
   }
 
@@ -111,11 +119,18 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    font-size: 17px;
   }
 }
 
@@ -123,9 +138,16 @@
   padding: 28px 0;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
+
   @media (min-width: $tablet) {
     box-shadow: none;
-    margin-right: 20px;
+    margin-right: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    &:not(:last-of-type) {
+      margin-right: 72px;
+    }
   }
 }
 
@@ -133,7 +155,7 @@
   text-decoration: none;
   color: $black;
   margin-left: 76px;
-  padding: 25px;
+  display: inline-block;
 
   @media (min-width: $tablet) {
     margin-left: 0;
@@ -157,6 +179,7 @@
   @media (min-width: $desktop) {
     order: 3;
     margin-left: 0;
+    justify-content: flex-end;
   }
 }
 
@@ -166,8 +189,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  line-height: 24px;
   font-weight: 700;
+  font-size: 17px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -176,8 +199,16 @@
 }
 
 .user-nav__item {
-  padding: 32px 0;
+  padding: 28px 0;
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  &--search {
+    @media (min-width: $tablet) {
+      span {
+        display: none;
+      }
+    }
+  }
 
   @media (min-width: $tablet) {
     box-shadow: none;
@@ -188,8 +219,18 @@
 .user-nav__link {
   text-decoration: none;
   color: $black;
-  margin-left: 76px;
-  padding: 25px;
+  display: inline-block;
+  margin-left: 36px;
+  line-height: 24px;
+
+  span {
+    margin-left: 17px;
+
+    @media (min-width: $desktop) {
+      margin-left: 26px;
+      margin-right: 2px;
+    }
+  }
 
   @media (min-width: $tablet) {
     margin-left: 0;
@@ -204,7 +245,7 @@
     display: block;
     position: absolute;
     left: 50px;
-    bottom: -70px;
+    bottom: -42px;
     z-index: 5;
   }
 }
@@ -214,10 +255,18 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
 }
 
-.sale-nav__item {
-  margin-right: 20px;
+.sale-nav__item:not(:last-of-type) {
+  margin-right: 63px;
+}
+
+.sale-nav__link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .delivery-slogan {
@@ -227,7 +276,8 @@
     display: block;
     position: absolute;
     right: 50px;
-    bottom: -50px;
+    bottom: -40px;
     z-index: 5;
+    font-size: 15px;
   }
 }
