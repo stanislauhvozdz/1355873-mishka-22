@@ -1,10 +1,10 @@
 .promo-block {
   position: relative;
   margin-bottom: 32px;
-  background-color: #f9f9f9;
+  background-color: $color-bg-promo-block;
 
-  @media (min-width: $tablet) {
-    &::before {
+  &::before {
+    @media (min-width: $tablet) {
       position: absolute;
       left: 0;
       bottom: -14px;
@@ -13,10 +13,8 @@
       width: 100%;
       background-image: url("../../img/zigzag-fill-tablet.svg");
     }
-  }
 
-  @media (min-width: $desktop) {
-    &::before {
+    @media (min-width: $desktop) {
       background-image: url("../../img/zigzag-fill-desktop.svg");
       height: 34px;
     }
@@ -24,14 +22,6 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 53px;
-  }
-}
-
-.promo-block-container {
-  padding: 0;
-
-  @media (min-width: $tablet) {
-    padding: 0 50px;
   }
 }
 
@@ -68,10 +58,6 @@
     line-height: 50px;
     width: 670px;
     top: 125px;
-
-    .br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop) {
@@ -81,7 +67,7 @@
   }
 }
 
-.promo-block-list {
+.promo-block__list {
   margin: 0;
   margin-top: -97px;
   margin-bottom: 28px;
@@ -106,18 +92,17 @@
   }
 }
 
-.promo-block-list__item {
+.promo-block__item {
   padding: 24px 0 31px 30px;
   border: none;
   background-repeat: no-repeat;
 
-
-  &:nth-of-type(1) {
+  &--interior {
     background-image: url("../../img/icon-interior.svg");
     background-position: right 28px center;
   }
 
-  &:nth-of-type(2) {
+  &--toys {
     background-image: url("../../img/icon-toys.svg");
     background-position: right 28px center;
   }

@@ -7,7 +7,7 @@
   }
 }
 
-.footer-container {
+.footer__container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,7 +33,7 @@
   }
 }
 
-.social-list {
+.page-footer__social-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -48,7 +48,7 @@
   }
 }
 
-.social-list__item:not(:last-of-type) {
+.page-footer__item:not(:last-of-type) {
   margin-right: 41px;
 }
 

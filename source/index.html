@@ -14,7 +14,7 @@
     <div class="container container--no-padding page-header-container">
       <div class="page-header__wrapper">
         <a class="page-header__logo">
-          <picture>
+          <picture class="page-header__image-source">
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
             <img class="page-header__image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
@@ -52,45 +52,45 @@
           </li>
         </ul>
       </nav>
-      <nav class="sale-nav">
-        <ul class="sale-nav__list">
-          <li class="sale-nav__item">
-            <a class="sale-nav__link" href="#">Новые поступления</a>
+      <nav class="minor-nav minor-nav--hidden">
+        <ul class="minor-nav__list">
+          <li class="minor-nav__item">
+            <a class="minor-nav__link" href="#">Новые поступления</a>
           </li>
-          <li class="sale-nav__item">
-            <a class="sale-nav__link" href="#">Распродажа</a>
+          <li class="minor-nav__item">
+            <a class="minor-nav__link" href="#">Распродажа</a>
           </li>
         </ul>
       </nav>
-      <span class="delivery-slogan">Бесплатная доставка по России</span>
+      <span class="page-header__delivery-slogan page-header__delivery-slogan--hidden">Бесплатная доставка по России</span>
     </div>
   </header>
   <main class="page-main">
     <section class="promo-block">
       <div class="promo-block__image-box">
-        <picture>
+        <picture class="promo-block__image-source">
           <source media="(min-width: 1150px)" srcset="img/hero-desktop.png">
           <source media="(min-width: 768px)" srcset="img/hero-tablet.png">
           <img class="promo-block__image" src="img/hero-mobile@2x.png" alt="Вязаные корзинки и плющевые медведи">
         </picture>
       </div>
-      <div class="container promo-block-container">
-        <h1 class="promo-block__title">Милые штуки <br class="br"> ручной <br class="br"> работы для дома</h1>
-        <ul class="promo-block-list">
-          <li class="promo-block-list__item">
+      <div class="container container--no-padding">
+        <h1 class="promo-block__title">Милые&nbsp;штуки ручной работы&nbsp;для&nbsp;дома</h1>
+        <ul class="promo-block__list">
+          <li class="promo-block__item promo-block__item--interior">
             <a class="promo-block__link" href="#">Предметы <br> интерьера</a>
           </li>
-          <li class="promo-block-list__item">
+          <li class="promo-block__item promo-block__item--toys">
             <a class="promo-block__link" href="#">Детские <br> игрушки</a>
           </li>
         </ul>
       </div>
     </section>
     <section class="product-week">
-      <div class="container product-week-container">
+      <div class="container product-week__container">
         <p class="product-week__name-of-product">Вязаные корзинки</p>
         <h2 class="product-week__title">ТОВАР НЕДЕЛИ</h2>
-        <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
+        <p class="product-week__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
           размерах.</p>
         <dl class="product-week__list">
           <div class="product-week__item">
@@ -193,10 +193,10 @@
         </dl>
       </div>
       <div class="contacts-map">
-        <picture>
+        <picture class="contacts-map__image-source">
           <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png">
-          <img src="img/map-mobile@1x.png" alt="Карта с адресом магазина">
+          <img class="contacts-map__image" src="img/map-mobile@1x.png" alt="Карта с адресом магазина">
         </picture>
       </div>
       <div class="container">
@@ -205,29 +205,29 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container footer-container">
+    <div class="container footer__container">
       <a class="footer__logo" href="#">
         <svg class="footer__logo-svg" width="86" height="35">
           <use xlink:href="img/sprite.svg#mishka-logo"></use>
         </svg>
       </a>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <svg width="22" height="22">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <svg width="15" height="28">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
+        <li class="page-footer__item">
+          <a class="page-footer__link" href="#">
             <svg width="23" height="20">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>

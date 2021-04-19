@@ -6,6 +6,6 @@ const mainNavigation = document.querySelector('.main-nav');
 navigationToggle.addEventListener('click', function (evn) {
   evn.preventDefault();
   navigationToggle.classList.toggle('page-header__nav-toggle--active');
-  userNavigation.classList.toggle('user-nav--active');
-  mainNavigation.classList.toggle('main-nav--active');
+  userNavigation.classList.toggle('user-nav--hidden');
+  mainNavigation.classList.toggle('main-nav--hidden');
 });
