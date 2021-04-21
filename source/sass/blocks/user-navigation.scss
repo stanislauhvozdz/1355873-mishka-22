@@ -27,6 +27,7 @@
   list-style: none;
   font-weight: 700;
   font-size: 17px;
+  line-height: 24px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -38,17 +39,17 @@
   padding: 28px 0;
   box-shadow: 0 1px 0 rgba($black, 0.1), inset 0 1px 0 rgba($black, 0.1);
 
-  &--search {
-    @media (min-width: $tablet) {
-      span {
-        display: none;
-      }
-    }
-  }
-
   @media (min-width: $tablet) {
     box-shadow: none;
     margin-left: 20px;
+  }
+}
+
+.user-nav__description-search {
+  margin-left: 17px;
+
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 
@@ -57,19 +58,18 @@
   color: $black;
   display: block;
   margin-left: 36px;
-  line-height: 24px;
-
-  span {
-    margin-left: 17px;
-
-    @media (min-width: $desktop) {
-      margin-left: 26px;
-      margin-right: 2px;
-    }
-  }
 
   @media (min-width: $tablet) {
     margin-left: 0;
     padding: 0;
+  }
+}
+
+.user-nav__description-basket {
+  margin-left: 17px;
+
+  @media (min-width: $desktop) {
+    margin-left: 26px;
+    margin-right: 2px;
   }
 }

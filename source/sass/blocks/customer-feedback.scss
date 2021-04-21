@@ -1,6 +1,8 @@
 .customer-feedback {
   position: relative;
+}
 
+.customer-feedback__positioning {
   &::before {
     position: absolute;
     content: "";
@@ -37,7 +39,7 @@
   }
 }
 
-.customer-feedback-container {
+.customer-feedback__container {
   position: relative;
 
   @media (min-width: $tablet) {
@@ -88,102 +90,6 @@
     display: block;
   }
 }
-
-.blockquote {
-  margin: 0;
-  color: $color-primary;
-  font-size: 15px;
-  line-height: 30px;
-  margin-bottom: 34px;
-  display: inline-block;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 0;
-  }
-}
-
-.blockquote__author {
-  margin-top: 35px;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: $color-primary;
-
-  @media (min-width: $tablet) {
-    margin-top: calc((((100% - 768px) * 0.0419) * -1) + 60px);
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: 44px;
-  }
-}
-
-.blockquote__source {
-  margin: 0;
-  margin-top: 6px;
-
-  @media (min-width: $tablet) {
-    padding-bottom: 50px;
-  }
-
-  @media (min-width: $desktop) {
-    padding-bottom: 100px;
-  }
-}
-
-.blockquote__link {
-  text-decoration: none;
-  color: inherit;
-}
-
-.slider-control {
-  display: flex;
-  justify-content: center;
-  width: 260px;
-  margin: 0 auto;
-  margin-bottom: 40px;
-
-  @media (min-width: $tablet) {
-    position: absolute;
-    bottom: 60px;
-    right: 50px;
-    width: 175px;
-  }
-}
-
-.slider-control__prev,
-.slider-control__next {
-  width: 100%;
-  height: 50px;
-  border: 1px solid rgba($black, 0.2);
-  border-collapse: inherit;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
-  @media (min-width: $tablet) {
-    border: none;
-  }
-}
-
-.slider-control__prev {
-  background-image: url("../../img/icon-huge-arrow-left.svg");
-  border-right: transparent;
-}
-
-.slider-control__next {
-  background-image: url("../../img/icon-huge-arrow-right.svg");
-}
-
 
 .customer-feedback__button {
   width: 260px;

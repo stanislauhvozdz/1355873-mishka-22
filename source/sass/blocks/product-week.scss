@@ -29,6 +29,9 @@
 }
 
 .product-week__container {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -43,6 +46,7 @@
 }
 
 .product-week__name-of-product {
+  order: -1;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   font-weight: bold;
@@ -70,6 +74,7 @@
 }
 
 .product-week__title {
+  text-transform: uppercase;
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   color: $color-secondary;

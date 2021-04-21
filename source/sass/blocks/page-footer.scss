@@ -1,5 +1,8 @@
 .page-footer {
   background-color: $color-bg-footer;
+}
+
+.page-footer__positioning {
   padding: 28px 0;
 
   @media (min-width: $tablet) {
@@ -71,13 +74,13 @@
   color: $black;
   text-align: center;
 
-  svg {
-    fill: $color-secondary;
-    margin-left: 27px;
-  }
-
   @media (min-width: $tablet) {
     flex-basis: 33.333%;
     text-align: right;
   }
+}
+
+.page-footer__icon-htmlacademy {
+  fill: $color-secondary;
+  margin-left: 27px;
 }

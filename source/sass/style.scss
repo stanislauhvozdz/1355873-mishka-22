@@ -2,7 +2,7 @@
 @import "variables.scss";
 @import "fonts.scss";
 @import "common.scss";
-@import "blocks/header.scss";
+@import "blocks/page-header.scss";
 @import "blocks/main-navigation.scss";
 @import "blocks/user-navigation.scss";
 @import "blocks/minor-navigation.scss";
@@ -10,7 +10,10 @@
 @import "blocks/product-week.scss";
 @import "blocks/about-us.scss";
 @import "blocks/customer-feedback.scss";
+@import "blocks/blockquote.scss";
+@import "blocks/slider-control.scss";
 @import "blocks/contacts.scss";
+@import "blocks/contacts-map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/button.scss";
 @import "blocks/modal.scss";

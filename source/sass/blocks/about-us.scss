@@ -1,5 +1,8 @@
 .about-us {
   font-weight: 700;
+}
+
+.about-us__positioning {
   padding-top: 22px;
 
   @media (min-width: $tablet) {
@@ -65,55 +68,55 @@
     background-repeat: no-repeat;
   }
 
-  &:nth-child(1)::before {
-    background-image: url("../../img/icon-about-us-1.svg");
-    width: 33px;
-    height: 38px;
-    left: 8px;
-    top: -55px;
-  }
-
-  &:nth-child(2)::before {
-    background-image: url("../../img/icon-about-us-2.svg");
-    width: 47px;
-    height: 23px;
-    top: -54px;
-    left: 0;
-  }
-
-  &:nth-child(3)::before {
-    background-image: url("../../img/icon-about-us-3.svg");
-    width: 34px;
-    height: 27px;
-    top: -49px;
-    left: 7px;
-  }
-
-  &:nth-child(4)::before {
-    background-image: url("../../img/icon-about-us-4.svg");
-    width: 35px;
-    height: 35px;
-    top: -52px;
-    left: 4px;
-  }
-
-  &:nth-child(5)::before {
-    background-image: url("../../img/icon-about-us-5.svg");
-    width: 55px;
-    height: 23px;
-    top: -50px;
-    left: -6px;
-  }
-
-  &:nth-child(6)::before {
-    background-image: url("../../img/icon-about-us-6.svg");
-    width: 33px;
-    height: 32px;
-    top: -53px;
-    left: 3px;
-  }
-
   @media (min-width: $tablet) {
     margin-top: 60px;
   }
+}
+
+.about-us__item--materials::before {
+  background-image: url("../../img/icon-about-us-1.svg");
+  width: 33px;
+  height: 38px;
+  left: 8px;
+  top: -55px;
+}
+
+.about-us__item--style::before {
+  background-image: url("../../img/icon-about-us-2.svg");
+  width: 47px;
+  height: 23px;
+  top: -54px;
+  left: 0;
+}
+
+.about-us__item--likes::before {
+  background-image: url("../../img/icon-about-us-3.svg");
+  width: 34px;
+  height: 27px;
+  top: -49px;
+  left: 7px;
+}
+
+.about-us__item--love::before {
+  background-image: url("../../img/icon-about-us-4.svg");
+  width: 35px;
+  height: 35px;
+  top: -52px;
+  left: 4px;
+}
+
+.about-us__item--support::before {
+  background-image: url("../../img/icon-about-us-5.svg");
+  width: 55px;
+  height: 23px;
+  top: -50px;
+  left: -6px;
+}
+
+.about-us__item--delivery::before {
+  background-image: url("../../img/icon-about-us-6.svg");
+  width: 33px;
+  height: 32px;
+  top: -53px;
+  left: 3px;
 }
