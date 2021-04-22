@@ -1,0 +1,13 @@
+.textarea-box {
+  @media (min-width: $tablet) {
+    margin-left: 167px;
+  }
+}
+
+.textarea-box__input {
+  width: 100%;
+  padding: 17px;
+  height: 142px;
+  resize: none;
+  border: 2px solid $black;
+}

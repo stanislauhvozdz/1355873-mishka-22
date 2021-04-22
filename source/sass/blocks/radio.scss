@@ -1,0 +1,67 @@
+.radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.radio__positioning {
+  padding-left: 60px;
+
+  @media (min-width: $tablet) {
+    padding-left: 80px;
+  }
+}
+
+.radio__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.radio__checkmark {
+  position: absolute;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 2px solid $black;
+
+  @media (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.radio__checkmark::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.radio__input:checked + .radio__checkmark::before {
+  display: block;
+}

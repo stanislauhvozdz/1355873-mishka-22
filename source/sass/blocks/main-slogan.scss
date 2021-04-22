@@ -1,0 +1,54 @@
+.main-slogan {
+  background-color: $color-bg-footer;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-repeat: repeat-x;
+    z-index: 2;
+
+    @media (min-width: $tablet) {
+      height: 24px;
+      background-image: url("../../img/zigzag-fill-tablet.svg");
+    }
+
+    @media (min-width: $desktop) {
+      height: 34px;
+      background-image: url("../../img/zigzag-fill-desktop.svg");
+    }
+  }
+}
+
+.main-slogan__positioning {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 57px;
+  }
+}
+
+.main-slogan__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $black;
+  padding: 69px 0 74px;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 43px;
+    line-height: 50px;
+    padding: 104px 0 80px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    padding: 102px 0 96px;
+  }
+}
