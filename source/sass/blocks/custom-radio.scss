@@ -1,4 +1,4 @@
-.radio {
+.custom-radio {
   position: relative;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@
   }
 }
 
-.radio__positioning {
+.custom-radio__positioning {
   padding-left: 60px;
 
   @media (min-width: $tablet) {
@@ -21,14 +21,7 @@
   }
 }
 
-.radio__input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-.radio__checkmark {
+.custom-radio__checkmark {
   position: absolute;
   left: 0;
   width: 38px;
@@ -43,7 +36,7 @@
   }
 }
 
-.radio__checkmark::before {
+.custom-radio__checkmark::before {
   display: none;
   content: "";
   position: absolute;
@@ -62,6 +55,6 @@
   }
 }
 
-.radio__input:checked + .radio__checkmark::before {
+.custom-radio__input:checked + .custom-radio__checkmark::before {
   display: block;
 }

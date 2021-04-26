@@ -1,4 +1,4 @@
-.text-box {
+.custom-text-box {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -10,13 +10,13 @@
   }
 }
 
-.text-box__positioning {
+.custom-text-box__positioning {
   @media (min-width: $tablet) {
     margin-left: 167px;
   }
 }
 
-.text-box__input {
+.custom-text-box__input {
   padding-top: 15px;
   padding-bottom: 16px;
   border: none;
@@ -32,7 +32,7 @@
   }
 }
 
-.text-box__description {
+.custom-text-box__description {
   font-weight: bold;
   font-size: 17px;
 
@@ -42,18 +42,16 @@
   }
 }
 
-.text-box__icon-phone {
+.custom-text-box__icon-phone {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: red;
 }
 
-.text-box__icon-mail {
+.custom-text-box__icon-mail {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  background-color: red;
 }

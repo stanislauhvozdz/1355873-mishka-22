@@ -1,4 +1,4 @@
-.checkbox {
+.custom-checkbox {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -13,7 +13,7 @@
   }
 }
 
-.checkbox__positioning {
+.custom-checkbox__positioning {
   padding-left: 60px;
 
   @media (min-width: $tablet) {
@@ -21,14 +21,7 @@
   }
 }
 
-.checkbox__input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  visibility: hidden;
-}
-
-.checkbox__checkmark {
+.custom-checkbox__checkmark {
   position: absolute;
   left: 0;
   width: 38px;
@@ -42,7 +35,7 @@
   }
 }
 
-.checkbox__checkmark::before {
+.custom-checkbox__checkmark::before {
   display: none;
   content: "";
   position: absolute;
@@ -64,6 +57,6 @@
   }
 }
 
-.checkbox__input:checked ~ .checkbox__checkmark::before {
+.custom-checkbox__input:checked ~ .custom-checkbox__checkmark::before {
   display: block;
 }

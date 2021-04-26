@@ -1,8 +1,8 @@
-.order-form {
+.site-form {
   margin-bottom: 55px;
 }
 
-.order-form__slogan {
+.site-form__slogan {
   margin: 0;
   font-weight: 400;
   font-size: 13px;
@@ -17,7 +17,7 @@
   }
 }
 
-.order-form__fieldset {
+.site-form__fieldset {
   margin: 0;
   padding: 0;
   display: flex;
@@ -75,7 +75,7 @@
   }
 }
 
-.order-form__legend {
+.site-form__legend {
   padding-right: 20px;
   font-weight: bold;
   font-size: 17px;
@@ -85,33 +85,33 @@
   @media (min-width: $tablet) {
     transform: translateY(51px);
   }
+}
 
-  &--color {
-    @media (min-width: $tablet) {
-      transform: translateY(66px);
-    }
-  }
-
-  &--initials {
-    @media (min-width: $tablet) {
-      transform: translateY(61px);
-    }
-  }
-
-  &--phone {
-    @media (min-width: $tablet) {
-      transform: translateY(65px);
-    }
-  }
-
-  &--email {
-    @media (min-width: $tablet) {
-      transform: translateY(37px);
-    }
+.site-form__legend--color {
+  @media (min-width: $tablet) {
+    transform: translateY(66px);
   }
 }
 
-.order-form__list {
+.site-form__legend--initials {
+  @media (min-width: $tablet) {
+    transform: translateY(61px);
+  }
+}
+
+.site-form__legend--phone {
+  @media (min-width: $tablet) {
+    transform: translateY(65px);
+  }
+}
+
+.site-form__legend--email {
+  @media (min-width: $tablet) {
+    transform: translateY(37px);
+  }
+}
+
+.site-form__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -121,7 +121,7 @@
   }
 }
 
-.order-form__item:not(:last-of-type) {
+.site-form__item:not(:last-child) {
   margin-bottom: 24px;
 
   @media (min-width: $tablet) {
@@ -129,7 +129,7 @@
   }
 }
 
-.order-form__fieldset--color .order-form__item {
+.site-form__fieldset--color .site-form__item {
   @media (min-width: $tablet) {
     flex-basis: 50%;
   }
@@ -139,14 +139,14 @@
   }
 }
 
-.order-form__list--color {
+.site-form__list--color {
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
   }
 }
 
-.order-form__list--initials .order-form__item:not(:last-of-type) {
+.site-form__list--initials .site-form__item:not(:last-child) {
   margin-bottom: 22px;
 
   @media (min-width: $tablet) {
@@ -154,7 +154,7 @@
   }
 }
 
-.order-form__list--color .order-form__item:not(:last-of-type) {
+.site-form__list--color .site-form__item:not(:last-child) {
   margin-bottom: 43px;
 
   @media (min-width: $tablet) {
@@ -162,7 +162,7 @@
   }
 }
 
-.order-form__footnote {
+.site-form__footnote {
   font-size: 14px;
   line-height: 16px;
   color: $color-primary;
@@ -176,7 +176,7 @@
   }
 }
 
-.order-form__button {
+.site-form__button {
   width: 260px;
 
   @media (min-width: $tablet) {
