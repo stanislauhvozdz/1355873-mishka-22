@@ -6,10 +6,15 @@
   margin-bottom: 40px;
 
   @media (min-width: $tablet) {
+    margin-bottom: 0;
     position: absolute;
-    bottom: 60px;
+    bottom: 51px;
     right: 50px;
     width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 97px;
   }
 }
 

@@ -4,7 +4,7 @@
   @media (min-width: $desktop) {
     display: grid;
     grid-template-columns: 523px 527px;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-rows: 149px 260px 52px;
     width: min-content;
     margin: 0 auto;
   }
@@ -20,7 +20,7 @@
   @media (min-width: $desktop) {
     padding-top: 0;
     margin-top: 163px;
-    padding-bottom: 140px;
+    margin-bottom: 105px;
   }
 }
 
@@ -37,14 +37,15 @@
     line-height: 50px;
     margin-left: 0;
     margin-bottom: 49px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 34px;
+    margin-bottom: 19px;
     margin-left: 173px;
-    margin-top: 89px;
+    margin-top: 82px;
     padding: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -62,14 +63,17 @@
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 48px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
     margin-left: 174px;
     padding: 0;
+    padding-top: 26px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    justify-content: flex-start;
   }
 }
 
@@ -87,6 +91,11 @@
     flex-direction: row;
     font-size: 17px;
     flex-basis: 50%;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: auto;
   }
 }
 
@@ -115,6 +124,20 @@
     background-color: $color-secondary;
     bottom: -3px;
     left: 0;
+
+    @media (min-width: $desktop) {
+      bottom: -8px;
+    }
+  }
+
+  &:hover {
+    color: $color-secondary-hover;
+  }
+
+  &:active {
+    &::before {
+      opacity: 0.2;
+    }
   }
 }
 
@@ -149,6 +172,7 @@
     padding: 0;
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    align-self: flex-end;
   }
 }
 
@@ -166,10 +190,6 @@
 
   @media (min-width: $desktop) {
     margin: 0;
-    // bottom: -37px;
-    // left: 290px;
-
-
     left: 0%;
     transform: translateX(0);
   }

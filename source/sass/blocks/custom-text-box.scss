@@ -2,6 +2,30 @@
   position: relative;
   display: flex;
   flex-direction: column-reverse;
+  transition: all 0.5s ease-in-out;
+
+  &:hover {
+    .custom-text-box__input {
+      border-color: $color-secondary-hover;
+    }
+
+    .custom-text-box__icon-mail {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+
+    .custom-text-box__icon-phone {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .custom-text-box__input {
+      border-color: $color-secondary-hover;
+    }
+  }
+
 
   @media (min-width: $tablet) {
     flex-direction: row-reverse;
@@ -14,6 +38,10 @@
   @media (min-width: $tablet) {
     margin-left: 167px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 175px;
+  }
 }
 
 .custom-text-box__input {
@@ -22,6 +50,11 @@
   border: none;
   border-bottom: 2px solid $black;
   font-size: 17px;
+  outline: none;
+
+  &:focus {
+    border-color: $color-secondary-hover;
+  }
 
   @media (min-width: $tablet) {
     padding-left: 18px;
@@ -43,6 +76,8 @@
 }
 
 .custom-text-box__icon-phone {
+  fill: $black;
+  opacity: 0.2;
   position: absolute;
   right: 0;
   top: 50%;
@@ -50,6 +85,8 @@
 }
 
 .custom-text-box__icon-mail {
+  fill: $black;
+  opacity: 0.2;
   position: absolute;
   right: 0;
   top: 50%;

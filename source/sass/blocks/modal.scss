@@ -5,4 +5,23 @@
   border: 1px solid $white-200;
   box-shadow: 0 5px 10px rgba($black, 0.25);
   text-align: center;
+
+  @media (min-width: $tablet) {
+    width: 566px;
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+}
+
+.modal__title {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  min-width: 175px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 57px;
+  }
 }

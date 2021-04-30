@@ -31,6 +31,33 @@
   }
 }
 
+.main-slogan__positioning--catalog {
+  @media (min-width: $tablet) {
+    margin-bottom: 73px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 112px;
+  }
+
+  .main-slogan__title {
+    @media (min-width: $tablet) {
+      padding-top: 100px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 112px;
+    }
+  }
+}
+
+.main-slogan__positioning--order-form {
+  @media (min-width: $desktop) {
+    margin-bottom: 100px;
+  }
+}
+
+
 .main-slogan__title {
   margin: 0;
   font-weight: bold;
@@ -50,5 +77,11 @@
     font-size: 53px;
     line-height: 57px;
     padding: 102px 0 96px;
+  }
+}
+
+.main-slogan__title--order-form {
+  @media (min-width: $desktop) {
+    padding-bottom: 110px;
   }
 }

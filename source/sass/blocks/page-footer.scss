@@ -80,7 +80,45 @@
   }
 }
 
+.footer__logo-mishka {
+  fill: $black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-fb,
+.page-footer__icon-twitter,
+.page-footer__icon-instagram {
+  fill: $black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
 .page-footer__icon-htmlacademy {
   fill: $color-secondary;
   margin-left: 27px;
+  transition: hover 0.3s ease-in-out;
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

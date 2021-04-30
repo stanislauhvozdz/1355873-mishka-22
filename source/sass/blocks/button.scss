@@ -16,5 +16,11 @@
 
   &:active {
     opacity: 0.3;
+    color: rgba($white, 0.3);
+  }
+
+  &:focus {
+    outline: 2px solid $color-secondary-hover;
+    outline-offset: 4px;
   }
 }

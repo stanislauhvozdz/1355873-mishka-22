@@ -35,6 +35,16 @@
   }
 }
 
+.page-header__image {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__nav-toggle {
   position: absolute;
   right: 30px;

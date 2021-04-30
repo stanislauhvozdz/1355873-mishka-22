@@ -22,6 +22,7 @@
     @media (min-width: $desktop) {
       height: 23px;
       background-image: url("../../img/wave-desktop.svg");
+      bottom: -95px;
     }
   }
 
@@ -102,5 +103,9 @@
     top: 79px;
     right: 50px;
     width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 85px;
   }
 }

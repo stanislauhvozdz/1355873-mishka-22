@@ -242,24 +242,35 @@
     </div>
   </footer>
   <section class="modal">
-    <h2 class="modal__title">Добавить <br> в корзину</h2>
+    <h2 class="modal__title">Добавить в корзину</h2>
     <form class="form-choice-size" action="https://echo.htmlacademy.ru" method="POST">
       <fieldset class="form-choice-size__fieldset">
         <legend class="form-choice-size__legend">Выберите размер:</legend>
-        <label class="radio" aria-label="Размер S">
-          <input class="radio__input" type="radio" name="size">
-          <span class="radio__checkmark radio__checkmark--modal">S</span>
-        </label>
-        <label class="radio" aria-label="Размер M">
-          <input class="radio__input" type="radio" name="size">
-          <span class="radio__checkmark radio__checkmark--modal">M</span>
-        </label>
-        <label class="radio" aria-label="Размер L">
-          <input class="radio__input" type="radio" name="size">
-          <span class="radio__checkmark radio__checkmark--modal">L</span>
-        </label>
+        <ul class="form-choice-size__list">
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер S">
+              S
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" checked>
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер M">
+              M
+              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер L">
+              L
+              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+        </ul>
       </fieldset>
-      <button class="form-choice-size__button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
+      <button class="form-choice-size__button button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
     </form>
   </section>
   <script src="js/navigation-toggle.js"></script>
