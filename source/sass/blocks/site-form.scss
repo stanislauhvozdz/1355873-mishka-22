@@ -27,6 +27,7 @@
 }
 
 .site-form__fieldset {
+  position: relative;
   margin: 0;
   padding: 0;
   display: flex;
@@ -38,6 +39,12 @@
 
   @media (min-width: $tablet) {
     border: none;
+  }
+}
+
+.site-form__fieldset-wrapper {
+  @media (min-width: $tablet) {
+    background-color: $color-bg-footer;
   }
 }
 

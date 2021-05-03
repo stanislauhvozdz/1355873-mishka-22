@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -72,121 +72,139 @@
         <h1 class="main-slogan__title main-slogan__title--order-form">Вязание на заказ</h1>
       </div>
     </section>
-    <div class="container">
+    <div class="container1">
       <form class="site-form" action="#">
-        <p class="site-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
-          мы
-          свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="site-form__fieldset site-form__fieldset--type">
-          <legend class="site-form__legend">Тип</legend>
-          <ul class="site-form__list">
-            <li class="site-form__item">
-              <label class="custom-radio custom-radio__positioning">
-                <input class="custom-radio__input" type="radio" name="type" checked>
-                Аксессуар для интерьера
-                <span class="custom-radio__checkmark"></span>
+        <div class="container">
+          <p class="site-form__slogan">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и
+            мы
+            свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+        <div class="container">
+          <fieldset class="site-form__fieldset site-form__fieldset--type">
+            <legend class="site-form__legend">Тип</legend>
+            <ul class="site-form__list">
+              <li class="site-form__item">
+                <label class="custom-radio custom-radio__positioning">
+                  <input class="custom-radio__input" type="radio" name="type" checked>
+                  Аксессуар для интерьера
+                  <span class="custom-radio__checkmark"></span>
+                </label>
+              </li>
+              <li class="site-form__item">
+                <label class="custom-radio custom-radio__positioning">
+                  <input class="custom-radio__input" type="radio" name="type">
+                  Детская игрушка
+                  <span class="custom-radio__checkmark"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="site-form__fieldset-wrapper">
+          <div class="container">
+            <fieldset class="site-form__fieldset site-form__fieldset--color">
+              <legend class="site-form__legend site-form__legend--color">Цвет</legend>
+              <ul class="site-form__list site-form__list--color">
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="color" checked>Белый
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="color" checked>Серый
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="color">«Тиффани»
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="Чёрный">Чёрный
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="Розовый">Розовый
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+                <li class="site-form__item">
+                  <label class="custom-checkbox custom-checkbox__positioning">
+                    <input class="custom-checkbox__input" type="checkbox" name="Оранжевый">Оранжевый
+                    <span class="custom-checkbox__checkmark"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </div>
+        <div class="container">
+          <fieldset class="site-form__fieldset site-form__fieldset--initials">
+            <legend class="site-form__legend site-form__legend--initials">ФИО</legend>
+            <ul class="site-form__list site-form__list--initials">
+              <li class="site-form__item">
+                <label class="custom-text-box">
+                  <input class="custom-text-box__input" type="text" name="имя" placeholder="Введите ваше имя*" required>
+                  <span class="custom-text-box__description">Имя:</span>
+                </label>
+              </li>
+              <li class="site-form__item">
+                <label class="custom-text-box">
+                  <input class="custom-text-box__input" type="text" name="фамилия" placeholder="Укажите фамилию*"
+                    required>
+                  <span class="custom-text-box__description">Фамилия:</span>
+                </label>
+              </li>
+              <li class="site-form__item">
+                <label class="custom-text-box">
+                  <input class="custom-text-box__input" type="text" name="отчество"
+                    placeholder="Отчество, если желаете">
+                  <span class="custom-text-box__description">Отчество:</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="site-form__fieldset-wrapper">
+          <div class="container">
+            <fieldset class="site-form__fieldset site-form__fieldset--phone">
+              <legend class="site-form__legend site-form__legend--phone">тел</legend>
+              <label class="custom-text-box custom-text-box__positioning">
+                <input class="custom-text-box__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <svg class="custom-text-box__icon-phone" width="25" height="24">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg>
               </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-radio custom-radio__positioning">
-                <input class="custom-radio__input" type="radio" name="type">
-                Детская игрушка
-                <span class="custom-radio__checkmark"></span>
+            </fieldset>
+            <fieldset class="site-form__fieldset site-form__fieldset--email">
+              <legend class="site-form__legend site-form__legend--email">E-mail</legend>
+              <label class="custom-text-box custom-text-box__positioning">
+                <input class="custom-text-box__input" type="email" name="email" placeholder="Ваш Email*" required>
+                <svg class="custom-text-box__icon-mail" width="32" height="21">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
               </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="site-form__fieldset site-form__fieldset--color">
-          <legend class="site-form__legend site-form__legend--color">Цвет</legend>
-          <ul class="site-form__list site-form__list--color">
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="color" checked>Белый
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="color" checked>Серый
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="color">«Тиффани»
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="Чёрный">Чёрный
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="Розовый">Розовый
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-checkbox custom-checkbox__positioning">
-                <input class="custom-checkbox__input" type="checkbox" name="Оранжевый">Оранжевый
-                <span class="custom-checkbox__checkmark"></span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="site-form__fieldset site-form__fieldset--initials">
-          <legend class="site-form__legend site-form__legend--initials">ФИО</legend>
-          <ul class="site-form__list site-form__list--initials">
-            <li class="site-form__item">
-              <label class="custom-text-box">
-                <input class="custom-text-box__input" type="text" name="имя" placeholder="Введите ваше имя*" required>
-                <span class="custom-text-box__description">Имя:</span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-text-box">
-                <input class="custom-text-box__input" type="text" name="фамилия" placeholder="Укажите фамилию*" required>
-                <span class="custom-text-box__description">Фамилия:</span>
-              </label>
-            </li>
-            <li class="site-form__item">
-              <label class="custom-text-box">
-                <input class="custom-text-box__input" type="text" name="отчество" placeholder="Отчество, если желаете">
-                <span class="custom-text-box__description">Отчество:</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="site-form__fieldset site-form__fieldset--phone">
-          <legend class="site-form__legend site-form__legend--phone">тел</legend>
-          <label class="custom-text-box custom-text-box__positioning">
-            <input class="custom-text-box__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            <svg class="custom-text-box__icon-phone" width="25" height="24">
-            <use xlink:href="img/sprite.svg#icon-phone"></use>
-            </svg>
-          </label>
-        </fieldset>
-        <fieldset class="site-form__fieldset site-form__fieldset--email">
-          <legend class="site-form__legend site-form__legend--email">E-mail</legend>
-          <label class="custom-text-box custom-text-box__positioning">
-            <input class="custom-text-box__input" type="email" name="email" placeholder="Ваш Email*" required>
-            <svg class="custom-text-box__icon-mail" width="32" height="21">
-              <use xlink:href="img/sprite.svg#icon-mail"></use>
-            </svg>
-          </label>
-        </fieldset>
-        <fieldset class="site-form__fieldset site-form__fieldset--textarea">
-          <legend class="site-form__legend site-form__legend--textarea">Доп</legend>
-          <label class="custom-textarea-box custom-textarea-box__positioning">
-            <textarea class="custom-textarea-box__input" name="пожелания"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+          </div>
+        </div>
+        <div class="container">
+          <fieldset class="site-form__fieldset site-form__fieldset--textarea">
+            <legend class="site-form__legend site-form__legend--textarea">Доп</legend>
+            <label class="custom-textarea-box custom-textarea-box__positioning">
+              <textarea class="custom-textarea-box__input" name="пожелания"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </label>
           </fieldset>
-        <span class="site-form__footnote">*Поля обязательны для заполнения</span>
-        <button class="site-form__button button" type="submit">Отправить заказ</button>
+          <span class="site-form__footnote">*Поля обязательны для заполнения</span>
+          <button class="site-form__button button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </div>
   </main>
@@ -194,7 +212,7 @@
     <div class="container footer__container">
       <a class="footer__logo" href="#">
         <svg class="footer__logo-mishka" width="86" height="35">
-          <use xlink:href="img/sprite.svg#mishka-logo"></use>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list">
@@ -228,7 +246,7 @@
       </a>
     </div>
   </footer>
-  <script src="js/navigation-toggle.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

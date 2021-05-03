@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
 </head>
 
@@ -22,7 +22,7 @@
         </a>
         <button class="page-header__nav-toggle unselectable" type="button" aria-label="Открыть меню"></button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
@@ -32,7 +32,7 @@
           </li>
         </ul>
       </nav>
-      <nav class="user-nav">
+      <nav class="user-nav user-nav--no-js">
         <ul class="user-nav__list">
           <li class="user-nav__item user-nav__item--search">
             <a class="user-nav__link" href="#">
@@ -70,9 +70,12 @@
     <section class="promo-block">
       <div class="promo-block__image-box">
         <picture class="promo-block__image-source">
-          <source media="(min-width: 1150px)" srcset="img/hero-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/hero-tablet.png">
-          <img class="promo-block__image" src="img/hero-mobile@2x.png" alt="Вязаные корзинки и плющевые медведи">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/hero-desktop.webp 1x, img/hero-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/hero-mobile@1x.webp 1x, img/hero-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/hero-desktop.png 1x, img/hero-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/hero-tablet.png 1x, img/hero-tablet@2x.png 2x">
+          <img class="promo-block__image" src="img/hero-mobile@1x.png" srcset="img/hero-mobile@2x.png 2x" alt="Вязаные корзинки и плющевые медведи">
         </picture>
       </div>
       <div class="container container--no-padding">
@@ -109,8 +112,14 @@
           </div>
         </dl>
         <div class="product-week__image-box">
-          <img class="product-week__image" src="img/product-discount-mobile.png"
-            alt="Три вязаные корзинки различных размеров">
+          <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/product-discount-desktop.webp 1x, img/product-discount-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/product-discount-tablet.webp 1x, img/product-discount-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/product-discount-mobile@1x.webp 1x, img/product-discount-mobile@2x.webp 2x">
+            <source media="(min-width: 1150px)" srcset="img/product-discount-desktop.png 1x, img/product-discount-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/product-discount-tablet.png 1x, img/product-discount-tablet@2x.png 2x">
+            <img class="product-week__image" src="img/product-discount-mobile.png" srcset="img/product-discount-mobile@2x.png 2x" alt="Три вязаные корзинки различных размеров">
+          </picture>
         </div>
         <span class="product-week__price">Цена: 990 руб.</span>
         <button class="product-week__action button">ЗАКАЗАТЬ</button>
@@ -193,9 +202,12 @@
       </dl>
       <div class="contacts__map">
         <picture class="contacts-map__image-source">
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png">
-          <img class="contacts-map__image" src="img/map-mobile@1x.png" alt="Карта с адресом магазина">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
+          <img class="contacts-map__image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Карта с адресом магазина">
         </picture>
       </div>
       <div class="button-wrapper">
@@ -207,7 +219,7 @@
     <div class="container footer__container">
       <a class="footer__logo" href="#">
         <svg class="footer__logo-mishka" width="86" height="35">
-          <use xlink:href="img/sprite.svg#mishka-logo"></use>
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list">
@@ -273,7 +285,7 @@
       <button class="form-choice-size__button button" type="submit" aria-label="Добавить товар в корзину">Добавить</button>
     </form>
   </section>
-  <script src="js/navigation-toggle.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

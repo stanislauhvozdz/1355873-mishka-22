@@ -25,12 +25,26 @@
 }
 
 .contacts__title {
+  position: relative;
   padding: 0 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
   margin-bottom: 28px;
+
+  &::before {
+    @media (min-width: $desktop) {
+      content: "";
+      position: absolute;
+      width: 47px;
+      height: 81px;
+      top: -20px;
+      left: -120px;
+      background-image: url("../../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: $tablet) {
     font-size: 43px;

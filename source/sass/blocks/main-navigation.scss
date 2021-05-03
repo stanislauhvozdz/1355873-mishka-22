@@ -1,8 +1,11 @@
-
 .main-nav {
   display: none;
 
   &--hidden {
+    display: block;
+  }
+
+  &--no-js {
     display: block;
   }
 
