@@ -7,7 +7,7 @@
     @media (min-width: $tablet) {
       position: absolute;
       left: 0;
-      bottom: -14px;
+      bottom: -10px;
       content: "";
       height: 24px;
       width: 100%;
@@ -17,10 +17,15 @@
     @media (min-width: $desktop) {
       background-image: url("../../img/zigzag-fill-desktop.svg");
       height: 34px;
+      bottom: -16px;
     }
   }
 
   @media (min-width: $tablet) {
+    margin-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
     margin-bottom: 53px;
   }
 }
@@ -99,12 +104,16 @@
 
   &--interior {
     background-image: url("../../img/icon-interior.svg");
-    background-position: right 28px center;
+    background-position: right 35px center;
   }
 
   &--toys {
     background-image: url("../../img/icon-toys.svg");
     background-position: right 28px center;
+
+    @media (min-width: $tablet) {
+      background-position: right 34px center;
+    }
   }
 
   &:nth-child(odd) {

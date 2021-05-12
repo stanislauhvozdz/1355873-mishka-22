@@ -23,7 +23,7 @@
   }
 }
 
-.main-slogan__positioning {
+.main-slogan--positioning {
   margin-bottom: 17px;
 
   @media (min-width: $tablet) {
@@ -31,7 +31,7 @@
   }
 }
 
-.main-slogan__positioning--catalog {
+.main-slogan--positioning-catalog {
   @media (min-width: $tablet) {
     margin-bottom: 73px;
   }
@@ -51,7 +51,7 @@
   }
 }
 
-.main-slogan__positioning--order-form {
+.main-slogan--positioning-order-form {
   @media (min-width: $desktop) {
     margin-bottom: 100px;
   }

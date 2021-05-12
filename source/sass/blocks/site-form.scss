@@ -2,7 +2,11 @@
   margin-bottom: 55px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 49px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 51px;
   }
 }
 
@@ -58,7 +62,9 @@
   padding-top: 33px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 11px;
+    margin-bottom: 2px;
+    padding-top: 49px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $tablet) {
@@ -83,21 +89,29 @@
     padding-top: 32px;
     margin-bottom: 2px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 29px;
+  }
 }
 
 .site-form__fieldset--email {
   padding-top: 3px;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 53px;
+    margin-bottom: 0;
+  }
 }
 
 .site-form__fieldset--textarea {
   padding-top: 20px;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet) {
     padding-top: 30px;
-    margin-bottom: 53px;
+    margin-bottom: 47px;
   }
 }
 
@@ -129,11 +143,11 @@
 
 .site-form__legend--initials {
   @media (min-width: $tablet) {
-    transform: translateY(61px);
+    transform: translateY(64px);
   }
 
   @media (min-width: $desktop) {
-    transform: translate(61px, 61px);
+    transform: translate(61px, 64px);
   }
 }
 
@@ -153,13 +167,13 @@
   }
 
   @media (min-width: $desktop) {
-    transform: translate(61px, 37px);
+    transform: translate(61px, 41px);
   }
 }
 
 .site-form__legend--textarea {
   @media (min-width: $tablet) {
-    transform: translateY(68px);
+    transform: translateY(67px);
   }
 
   @media (min-width: $desktop) {
@@ -191,11 +205,11 @@
 
 .site-form__fieldset--color .site-form__item {
   @media (min-width: $tablet) {
-    flex-basis: 50%;
+    flex-basis: 240px;
   }
 
   @media (min-width: $desktop) {
-    flex-basis: 33%;
+    flex-basis: 263px;
   }
 }
 
@@ -203,14 +217,25 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-start;
+    margin: 0;
+    margin-left: 175px;
   }
 }
 
 .site-form__list--initials .site-form__item:not(:last-child) {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 24px;
   }
 }
 
@@ -218,7 +243,7 @@
   margin-bottom: 43px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 58px;
+    margin-bottom: 57px;
   }
 }
 
@@ -234,6 +259,13 @@
     line-height: 30px;
     float: right;
     margin-top: 9px;
+    transform: translate(0, 3px);
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    margin-right: 175px;
+    transform: translate(0, 4px);
   }
 }
 
@@ -245,6 +277,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 167px;
+    margin-left: 175px;
   }
 }

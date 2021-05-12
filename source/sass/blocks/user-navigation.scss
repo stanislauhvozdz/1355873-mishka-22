@@ -38,9 +38,20 @@
   }
 }
 
-.user-nav__icon-search,
+.user-nav__icon-search {
+  fill: rgba($black, 0.2);
+}
+
 .user-nav__icon-basket {
   fill: rgba($black, 0.2);
+
+  @media (min-width: $tablet) {
+    transform: translate(-8px, 3px);
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(1px, 2px);
+  }
 }
 
 .user-nav__item {

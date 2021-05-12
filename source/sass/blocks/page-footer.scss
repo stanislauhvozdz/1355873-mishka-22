@@ -2,15 +2,15 @@
   background-color: $color-bg-footer;
 }
 
-.page-footer__positioning {
+.page-footer--positioning {
   padding: 28px 0;
 
   @media (min-width: $tablet) {
-    padding: 52px 0;
+    padding: 50px 0;
   }
 }
 
-.footer__container {
+.page-footer__container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -33,6 +33,7 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -45,26 +46,28 @@
   margin-bottom: 43px;
 
   @media (min-width: $tablet) {
-    flex-basis: 33.333%;
     text-align: center;
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop) {
+    transform: translate(0, 3px);
+  }
 }
 
-.page-footer__item:not(:last-of-type) {
+.page-footer__item:not(:last-child) {
   margin-right: 41px;
 }
 
-.footer__logo {
+.page-footer__logo {
   display: none;
 
   @media (min-width: $tablet) {
     display: block;
-    flex-basis: 33.333%;
   }
 }
 
-.footer__academy-link {
+.page-footer__academy-link {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -75,12 +78,16 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    flex-basis: 33.333%;
+    transform: translate(-1px, -3px);
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(0, -2px);
   }
 }
 
-.footer__logo-mishka {
+.page-footer__logo-mishka {
   fill: $black;
   transition: all 0.3s ease-in-out;
 
@@ -113,6 +120,11 @@
   fill: $color-secondary;
   margin-left: 27px;
   transition: hover 0.3s ease-in-out;
+  transform: scale(1.5);
+
+  @media (min-width: $desktop) {
+    transform: translate(0, -2px) scale(1.5);
+  }
 
   &:hover {
     fill: $color-secondary-hover;

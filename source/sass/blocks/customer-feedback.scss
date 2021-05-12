@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.customer-feedback__positioning {
+.customer-feedback--positioning {
   &::before {
     position: absolute;
     content: "";
@@ -86,7 +86,7 @@
   @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
   }
 }
 
@@ -107,7 +107,7 @@
 
 .customer-feedback__button {
   width: 260px;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 auto;
   margin-bottom: 50px;
 
@@ -116,9 +116,10 @@
     top: 79px;
     right: 50px;
     width: 175px;
+    font-size: 18px;
   }
 
   @media (min-width: $desktop) {
-    top: 85px;
+    top: 82px;
   }
 }

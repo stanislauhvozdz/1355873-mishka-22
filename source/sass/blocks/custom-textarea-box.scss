@@ -10,12 +10,12 @@
   }
 }
 
-.custom-textarea-box__positioning {
+.custom-textarea-box--positioning {
   @media (min-width: $tablet) {
     margin-left: 167px;
   }
 
-  @media (min-width: $tablet) {
+  @media (min-width: $desktop) {
     margin: 0 175px;
   }
 }
@@ -27,6 +27,11 @@
   resize: none;
   border: 2px solid $black;
   outline: none;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    padding: 14px;
+  }
 
   &:focus {
     border-color: $color-secondary-hover;

@@ -19,7 +19,7 @@
   }
 }
 
-.custom-checkbox__positioning {
+.custom-checkbox--positioning {
   padding-left: 60px;
 
   @media (min-width: $tablet) {
@@ -60,6 +60,11 @@
   height: 38px;
   background-color: transparent;
   border: 2px solid $black;
+
+  &--order-form {
+    left: 0;
+    top: -20px;
+  }
 
   @media (min-width: $tablet) {
     width: 52px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru" class="page">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,7 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body class="page__body">
   <header class="page-header">
     <div class="container container--no-padding page-header__container">
@@ -66,7 +67,7 @@
     </div>
   </header>
   <main class="page-main">
-    <section class="main-slogan main-slogan__positioning main-slogan__positioning--catalog">
+    <section class="main-slogan main-slogan--positioning main-slogan--positioning-catalog">
       <div class="container">
         <h1 class="main-slogan__title">Каталог товаров</h1>
       </div>
@@ -79,12 +80,18 @@
             <article class="card-product">
               <div class="card-product__image-box">
                 <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-1@1x.webp 1x, img/photo-catalog-desktop-1@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-catalog-tablet-1@1x.webp 1x, img/photo-catalog-tablet-1@2x.webp 2x">
-                  <source type="image/webp" srcset="photo-catalog-mobile-1@1x.webp 1x, img/photo-catalog-mobile-1@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-1@1x.png 1x, img/photo-catalog-desktop-1@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet-1@1x.png 1x, img/photo-catalog-tablet-1@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-1@1x.png" srcset="img/photo-catalog-mobile-1@2x.png 2x" alt="Вязаный зайчик в синем трико">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-1@1x.webp 1x, img/photo-catalog-desktop-1@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-1@1x.webp 1x, img/photo-catalog-tablet-1@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="photo-catalog-mobile-1@1x.webp 1x, img/photo-catalog-mobile-1@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-1@1x.png 1x, img/photo-catalog-desktop-1@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-1@1x.png 1x, img/photo-catalog-tablet-1@2x.png 2x">
+                  <img class="card-product__image" src="img/photo-catalog-mobile-1@1x.png"
+                    srcset="img/photo-catalog-mobile-1@2x.png 2x" alt="Вязаный зайчик в синем трико">
                 </picture>
               </div>
               <div class="card-product__content-box">
@@ -105,12 +112,18 @@
             <article class="card-product">
               <div class="card-product__image-box">
                 <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-2@1x.webp 1x, img/photo-catalog-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-catalog-tablet-2@1x.webp 1x, img/photo-catalog-tablet-2@2x.webp 2x">
-                  <source type="image/webp" srcset="photo-catalog-mobile-2@1x.webp 1x, img/photo-catalog-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-2@1x.png 1x, img/photo-catalog-desktop-2@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet-2@1x.png 1x, img/photo-catalog-tablet-2@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-2@1x.png" srcset="img/photo-catalog-mobile-2@2x.png 2x" alt="Вязаный корзина красно-белого цвета">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-2@1x.webp 1x, img/photo-catalog-desktop-2@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-2@1x.webp 1x, img/photo-catalog-tablet-2@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="photo-catalog-mobile-2@1x.webp 1x, img/photo-catalog-mobile-2@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-2@1x.png 1x, img/photo-catalog-desktop-2@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-2@1x.png 1x, img/photo-catalog-tablet-2@2x.png 2x">
+                  <img class="card-product__image" src="img/photo-catalog-mobile-2@1x.png"
+                    srcset="img/photo-catalog-mobile-2@2x.png 2x" alt="Вязаный корзина красно-белого цвета">
                 </picture>
               </div>
               <div class="card-product__content-box">
@@ -131,16 +144,23 @@
             <article class="card-product">
               <div class="card-product__image-box">
                 <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-3@1x.webp 1x, img/photo-catalog-desktop-3@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-catalog-tablet-3@1x.webp 1x, img/photo-catalog-tablet-3@2x.webp 2x">
-                  <source type="image/webp" srcset="photo-catalog-mobile-3@1x.webp 1x, img/photo-catalog-mobile-3@2x.webp 2x">
-                  <source media="(min-width: 1150px)" srcset="img/photo-catalog-desktop-3@1x.png 1x, img/photo-catalog-desktop-3@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-catalog-tablet-3@1x.png 1x, img/photo-catalog-tablet-3@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-3@1x.png" srcset="img/photo-catalog-mobile-3@2x.png 2x" alt="Вязаный корзина зелено-белого цвета">
+                  <source type="image/webp" media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-3@1x.webp 1x, img/photo-catalog-desktop-3@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-3@1x.webp 1x, img/photo-catalog-tablet-3@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="photo-catalog-mobile-3@1x.webp 1x, img/photo-catalog-mobile-3@2x.webp 2x">
+                  <source media="(min-width: 1150px)"
+                    srcset="img/photo-catalog-desktop-3@1x.png 1x, img/photo-catalog-desktop-3@2x.png 2x">
+                  <source media="(min-width: 768px)"
+                    srcset="img/photo-catalog-tablet-3@1x.png 1x, img/photo-catalog-tablet-3@2x.png 2x">
+                  <img class="card-product__image" src="img/photo-catalog-mobile-3@1x.png"
+                    srcset="img/photo-catalog-mobile-3@2x.png 2x" alt="Вязаный корзина зелено-белого цвета">
                 </picture>
               </div>
               <div class="card-product__content-box">
-                <h2 class="card-product__product-name">Большая корзинка для игрушек</h2>
+                <h2 class="card-product__product-name card-product__product-name--big-name">Большая корзинка для игрушек
+                </h2>
                 <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
                 <div class="card-product__cost">
                   <span class="card-product__price">1 500 руб.</span>
@@ -159,18 +179,21 @@
     <div class="container">
       <section class="production-process-section">
         <h2 class="production-process-section__title">Процесс производства</h2>
-        <video class="production-process-section__video" src="#">
-        </video>
+        <div class="production-process-section__video">
+          <svg class="production-process-section__video-icon" width="102" height="78">
+            <use xlink:href="img/sprite.svg#icon-play"></use>
+          </svg>
+        </div>
         <p class="production-process-section__description">По просьбам наших любимых фолловеров мы сняли для вас
           подробное видео о том, как появляются наши товары.</p>
         <button class="button production-process-section__button" type="button">Сделать заказ</button>
       </section>
     </div>
   </main>
-  <footer class="page-footer page-footer__positioning">
-    <div class="container footer__container">
-      <a class="footer__logo" href="#">
-        <svg class="footer__logo-mishka" width="86" height="35">
+  <footer class="page-footer page-footer--positioning">
+    <div class="container page-footer__container">
+      <a class="page-footer__logo" href="#">
+        <svg class="page-footer__logo-mishka" width="102" height="34">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
@@ -197,7 +220,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
         Разработано
         <svg class="page-footer__icon-htmlacademy" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
@@ -205,6 +228,39 @@
       </a>
     </div>
   </footer>
+  <section class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <form class="form-choice-size" action="https://echo.htmlacademy.ru" method="POST">
+      <fieldset class="form-choice-size__fieldset">
+        <legend class="form-choice-size__legend">Выберите размер:</legend>
+        <ul class="form-choice-size__list">
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер S">
+              S
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" checked>
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер M">
+              M
+              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+          <li class="form-choice-size__item">
+            <label class="custom-radio custom-radio--modal" aria-label="Размер L">
+              L
+              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <button class="form-choice-size__button button" type="submit"
+        aria-label="Добавить товар в корзину">Добавить</button>
+    </form>
+  </section>
   <script src="js/script.min.js"></script>
 </body>
 
