@@ -7,6 +7,9 @@ if (userNavigation.classList.contains('user-nav--no-js')) {
 if (mainNavigation.classList.contains('main-nav--no-js')) {
   mainNavigation.classList.remove('main-nav--no-js');
 };
+if (navigationToggle.classList.contains('page-header__nav-toggle--no-js')) {
+  navigationToggle.classList.remove('page-header__nav-toggle--no-js');
+};
 
 navigationToggle.addEventListener('click', function (evn) {
   evn.preventDefault();

@@ -7,34 +7,36 @@
     position: absolute;
     content: "";
     left: 0;
-    bottom: 0;
+    bottom: -50px;
     height: 6px;
     width: 100%;
-    background-image: url("../../img/wave.svg");
+    background-image: url("../img/wave.svg");
     background-repeat: repeat-x;
 
     @media (min-width: $tablet) {
       height: 17px;
-      background-image: url("../../img/wave-tablet.svg");
+      background-image: url("../img/wave-tablet.svg");
       bottom: -85px;
     }
 
     @media (min-width: $desktop) {
       height: 23px;
-      background-image: url("../../img/wave-desktop.svg");
+      background-image: url("../img/wave-desktop.svg");
       bottom: -95px;
+      background-position: center;
+      background-repeat: no-repeat;
     }
   }
 
   @media (min-width: $tablet) {
-    background: url("../../img/customer-feedback-bg@1x.png"), url("../../img/customer-feedback-bg@1x.webp");
+    background: url("../img/customer-feedback-bg@1x.png"), url("../img/customer-feedback-bg@1x.webp");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: 115px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../../img/customer-feedback-bg@2x.png"), url("../../img/customer-feedback-bg@2x.webp");
+      background: url("../img/customer-feedback-bg@2x.png"), url("../img/customer-feedback-bg@2x.webp");
       background-size: 350px 457px;
       background-repeat: no-repeat;
     }
@@ -54,16 +56,17 @@
   }
 
   @media (min-width: $desktop) {
-    background: url("../../img/customer-feedback-bg@1x.png"), url("../../img/customer-feedback-bg@1x.webp");
-    background-position: left center;
+    background: url("../img/customer-feedback-bg@1x.png"), url("../img/customer-feedback-bg@1x.webp");
+    background-position: 50px center;
     background-repeat: no-repeat;
     background-size: contain;
     padding-left: 225px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background: url("../../img/customer-feedback-bg@2x.png"), url("../../img/customer-feedback-bg@2x.webp");
+      background: url("../img/customer-feedback-bg@2x.png"), url("../img/customer-feedback-bg@2x.webp");
       background-size: 350px 457px;
       background-repeat: no-repeat;
+      background-position: 50px center;
     }
   }
 }
@@ -106,6 +109,9 @@
 }
 
 .customer-feedback__button {
+  text-decoration: none;
+  text-align: center;
+  display: block;
   width: 260px;
   font-size: 20px;
   margin: 0 auto;

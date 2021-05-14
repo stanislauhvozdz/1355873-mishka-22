@@ -1,6 +1,12 @@
 .main-slogan {
+  margin-top: 82px;
+  border-top: 1px solid rgba($black, 0.2);
   background-color: $color-bg-footer;
   position: relative;
+
+  @media (min-width: $tablet) {
+    margin-top: 89px;
+  }
 
   &::before {
     content: "";
@@ -13,12 +19,18 @@
 
     @media (min-width: $tablet) {
       height: 24px;
-      background-image: url("../../img/zigzag-fill-tablet.svg");
+      background-image: url("../img/zigzag-fill-tablet.svg");
     }
 
     @media (min-width: $desktop) {
       height: 34px;
-      background-image: url("../../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
+    }
+  }
+
+  &.main-slogan--positioning-catalog {
+    &::before {
+      bottom: -5px;
     }
   }
 }
@@ -76,7 +88,7 @@
   @media (min-width: $desktop) {
     font-size: 53px;
     line-height: 57px;
-    padding: 102px 0 96px;
+    padding: 100px 0 96px;
   }
 }
 

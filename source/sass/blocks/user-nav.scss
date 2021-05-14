@@ -1,5 +1,6 @@
 .user-nav {
   display: none;
+  grid-area: user-navigation;
 
   &--hidden {
     display: block;
@@ -12,13 +13,13 @@
   @media (min-width: $tablet) {
     order: 2;
     display: block;
-    margin-left: auto;
+    justify-self: flex-end;
+    grid-column: -1 / -4;
   }
 
   @media (min-width: $desktop) {
     order: 3;
     margin-left: 0;
-    justify-content: flex-end;
   }
 }
 
