@@ -122,8 +122,8 @@
   &:hover {
     transform: translateY(-5px);
 
-    .promo-block__item--toys-icon,
-    .promo-block__item--interior-icon {
+    .promo-block__toys-icon,
+    .promo-block__interior-icon {
       opacity: 0.7;
     }
   }
@@ -131,8 +131,8 @@
   &:active {
     transform: translateY(-5px);
 
-    .promo-block__item--toys-icon,
-    .promo-block__item--interior-icon {
+    .promo-block__toys-icon,
+    .promo-block__interior-icon {
       opacity: 0.3;
     }
   }
