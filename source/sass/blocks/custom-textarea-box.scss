@@ -1,0 +1,39 @@
+.custom-textarea-box {
+  &:hover {
+    .custom-textarea-box__input {
+      border-color: $color-secondary-hover;
+    }
+  }
+
+  &:active {
+    border-color: $color-secondary-hover;
+  }
+}
+
+.custom-textarea-box--positioning {
+  @media (min-width: $tablet) {
+    margin-left: 167px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 175px;
+  }
+}
+
+.custom-textarea-box__input {
+  width: 100%;
+  padding: 17px;
+  height: 142px;
+  resize: none;
+  border: 2px solid $black;
+  outline: none;
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    padding: 14px;
+  }
+
+  &:focus {
+    border-color: $color-secondary-hover;
+  }
+}

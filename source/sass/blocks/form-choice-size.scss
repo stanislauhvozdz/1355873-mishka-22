@@ -1,0 +1,36 @@
+.form-choice-size__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.form-choice-size__legend {
+  font-size: 15px;
+  color: $color-primary;
+  margin-bottom: 20px;
+}
+
+.form-choice-size__list {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.form-choice-size__item {
+  &:not(:last-child) {
+    margin-right: 7px;
+  }
+}
+
+.form-choice-size__button {
+  background-color: $color-secondary;
+  color: $white;
+  border-color: $color-secondary;
+  width: 260px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+.custom-text-box {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  transition: all 0.5s ease-in-out;
+  font-size: 18px;
+
+  &:hover {
+    .custom-text-box__input {
+      border-color: $color-secondary-hover;
+    }
+
+    .custom-text-box__icon-mail {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+
+    .custom-text-box__icon-phone {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .custom-text-box__input {
+      border-color: $color-secondary-hover;
+    }
+  }
+
+
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.custom-text-box--positioning {
+  @media (min-width: $tablet) {
+    margin-left: 167px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 175px;
+  }
+}
+
+.custom-text-box__input {
+  padding-top: 17px;
+  padding-bottom: 14px;
+  border: none;
+  border-bottom: 2px solid $black;
+  font-size: 17px;
+  outline: none;
+  background-color: transparent;
+
+  &:focus {
+    border-color: $color-secondary-hover;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 18px;
+    font-size: 19px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(2px, 2px);
+    font-size: 20px;
+    padding-bottom: 13px;
+  }
+}
+
+.custom-text-box__description {
+  font-weight: bold;
+  font-size: 17px;
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    margin-right: 25px;
+  }
+}
+
+.custom-text-box__icon-phone {
+  fill: $black;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-7px, -14px);
+
+  @media (min-width: $tablet) {
+    transform: translate(-26px, -16px);
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(-8px, -12px);
+  }
+}
+
+.custom-text-box__icon-mail {
+  fill: $black;
+  opacity: 0.2;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(-3px, -10px);
+
+  @media (min-width: $tablet) {
+    transform: translate(-22px, -11px);
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(-4px, -6px);
+  }
+}

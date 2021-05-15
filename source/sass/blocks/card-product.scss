@@ -1,0 +1,143 @@
+.card-product {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    width: 316px;
+    height: 100%;
+  }
+
+  &:hover {
+    & .card-product__content-box {
+      box-shadow: 0 6px 10px rgba($black, 0.1);
+    }
+
+    & .card-product__product-name {
+      color: rgba($black, 0.6);
+    }
+
+    & .card-product__button-icon {
+      fill: $color-secondary-hover;
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .card-product__content-box {
+      box-shadow: 0 3px 5px rgba($black, 0.1);
+    }
+
+    & .card-product__product-name {
+      color: rgba($black, 0.6);
+    }
+
+    & .card-product__button-icon {
+      fill: rgba($color-secondary-hover, 0.3);
+      opacity: 1;
+    }
+  }
+}
+
+
+.card-product__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-product__product-name {
+  margin: 0;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+  margin-bottom: 4px;
+
+  &--big-name {
+    transform: translate(-1px, -6px);
+
+    @media (min-width: $tablet) {
+      transform: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    width: 235px;
+  }
+}
+
+.card-product__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $color-primary;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    flex-grow: 1;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 24px;
+  }
+}
+
+.card-product__content-box {
+  padding: 28px;
+  padding-bottom: 13px;
+  border: 1px solid $color-border;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    padding-left: 32px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 27px;
+  }
+}
+
+.card-product__cost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: -9px;
+    left: 0;
+    background-color: $color-border;
+
+    @media (min-width: $tablet) {
+      top: -12px;
+    }
+  }
+}
+
+.card-product__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.card-product__button {
+  border: none;
+  padding: 15px;
+  padding-right: 0;
+  background-color: transparent;
+}

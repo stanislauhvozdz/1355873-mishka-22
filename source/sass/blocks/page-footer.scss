@@ -1,0 +1,136 @@
+.page-footer {
+  background-color: $color-bg-footer;
+}
+
+.page-footer--positioning {
+  padding: 28px 0;
+
+  @media (min-width: $tablet) {
+    padding: 50px 0;
+  }
+}
+
+.page-footer__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 30px;
+    bottom: 55px;
+    width: calc(100% - 60px);
+    height: 1px;
+    background-color: rgba($black, 0.1);
+    z-index: 4;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.page-footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet) {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(0, 3px);
+  }
+}
+
+.page-footer__item:not(:last-child) {
+  margin-right: 41px;
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.page-footer__academy-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 19px;
+  text-decoration: none;
+  color: $black;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    transform: translate(-1px, -3px);
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    transform: translate(0, -2px);
+  }
+}
+
+.page-footer__logo-mishka {
+  fill: $black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-footer__icon-fb,
+.page-footer__icon-twitter,
+.page-footer__icon-instagram {
+  fill: $black;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.page-footer__icon-htmlacademy {
+  fill: $color-secondary;
+  margin-left: 27px;
+  transition: hover 0.3s ease-in-out;
+  transform: scale(1.5);
+
+  @media (min-width: $desktop) {
+    transform: translate(0, -2px) scale(1.5);
+  }
+
+  &:hover {
+    fill: $color-secondary-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

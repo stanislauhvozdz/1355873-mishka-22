@@ -1,0 +1,144 @@
+.custom-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+
+  &--modal {
+    padding: 15px;
+    width: 82px;
+    border: 1px solid transparent;
+    display: block;
+
+    &:hover {
+      .custom-radio__checkmark--modal {
+        border-color: rgba($color-primary, 0.3);
+      }
+
+      .custom-radio__checkmark {
+        border-color: $color-secondary;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      width: 112px;
+    }
+  }
+
+  &:hover {
+    .custom-radio__checkmark {
+      border-color: $color-secondary;
+    }
+  }
+
+  &:focus {
+    .custom-radio__checkmark {
+      border-color: $color-secondary;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+.custom-radio--positioning {
+  padding-left: 60px;
+
+  @media (min-width: $tablet) {
+    padding-left: 80px;
+  }
+}
+
+.custom-radio__checkmark {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: $white;
+  border-radius: 50%;
+  border: 2px solid $black;
+
+  @media (min-width: $tablet) {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.custom-radio__checkmark::before {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+.custom-radio__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+
+  &:focus {
+    & ~ .custom-radio__checkmark {
+      border-color: $color-secondary-hover;
+    }
+  }
+
+  &:active {
+    & ~ .custom-radio__checkmark {
+      border-color: rgba($black, 0.3);
+    }
+  }
+
+  &:checked {
+    & ~ .custom-radio__checkmark::before {
+      display: block;
+    }
+  }
+}
+
+.custom-radio__checkmark--modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 52px;
+  border: 2px solid $color-border;
+  border-radius: 0;
+  background-color: transparent;
+
+  &::before {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: 82px;
+    height: 52px;
+    border: 2px solid $color-secondary-hover;
+    background-color: transparent;
+    border-radius: 0;
+
+    @media (min-width: $tablet) {
+      width: 112px;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    width: 112px;
+  }
+}
