@@ -1,4 +1,6 @@
 .promo-block {
+  border-top: 1px solid rgba($black, 0.2);
+  margin-top: 82px;
   position: relative;
   margin-bottom: 32px;
   background-color: $color-bg-promo-block;
@@ -6,27 +8,31 @@
   &::before {
     @media (min-width: $tablet) {
       position: absolute;
+      z-index: 100;
       left: 0;
       bottom: -10px;
       content: "";
       height: 24px;
       width: 100%;
-      background-image: url("../../img/zigzag-fill-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url("../img/zigzag-fill-tablet.svg");
     }
 
     @media (min-width: $desktop) {
-      background-image: url("../../img/zigzag-fill-desktop.svg");
+      background-image: url("../img/zigzag-fill-desktop.svg");
       height: 34px;
       bottom: -16px;
     }
   }
 
   @media (min-width: $tablet) {
-    margin-bottom: 51px;
+    margin-bottom: 49px;
+    margin-top: 89px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 53px;
+    margin-bottom: 51px;
   }
 }
 
@@ -98,23 +104,12 @@
 }
 
 .promo-block__item {
-  padding: 24px 0 31px 30px;
+  position: relative;
+  padding: 24px 0 18px 30px;
   border: none;
-  background-repeat: no-repeat;
-
-  &--interior {
-    background-image: url("../../img/icon-interior.svg");
-    background-position: right 35px center;
-  }
-
-  &--toys {
-    background-image: url("../../img/icon-toys.svg");
-    background-position: right 28px center;
-
-    @media (min-width: $tablet) {
-      background-position: right 34px center;
-    }
-  }
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-between;
 
   &:nth-child(odd) {
     background-color: $color-secondary-50;
@@ -124,9 +119,45 @@
     background-color: $color-secondary-100;
   }
 
+  &:hover {
+    transform: translateY(-5px);
+
+    .promo-block__item--toys-icon,
+    .promo-block__item--interior-icon {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    transform: translateY(-5px);
+
+    .promo-block__item--toys-icon,
+    .promo-block__item--interior-icon {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet) {
     flex-basis: 50%;
     padding: 27px 0 34px 36px;
+  }
+}
+
+.promo-block__toys-icon {
+  opacity: 0.5;
+  transform: translate(-27px, -3px);
+
+  @media (min-width: $tablet) {
+    transform: translate(-36px, 4px);
+  }
+}
+
+.promo-block__interior-icon {
+  opacity: 0.5;
+  transform: translate(-35px, -1px);
+
+  @media (min-width: $tablet) {
+    transform: translate(-36px, 6px);
   }
 }
 
@@ -138,6 +169,15 @@
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 
   @media (min-width: $tablet) {
     font-size: 20px;

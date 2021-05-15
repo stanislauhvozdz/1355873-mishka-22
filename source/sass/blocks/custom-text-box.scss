@@ -27,7 +27,6 @@
     }
   }
 
-
   @media (min-width: $tablet) {
     flex-direction: row-reverse;
     align-items: center;
@@ -46,16 +45,40 @@
 }
 
 .custom-text-box__input {
+  font-family: inherit;
   padding-top: 17px;
   padding-bottom: 14px;
   border: none;
   border-bottom: 2px solid $black;
   font-size: 17px;
+  line-height: 18px;
   outline: none;
   background-color: transparent;
 
   &:focus {
     border-color: $color-secondary-hover;
+
+    & ~ .custom-text-box__icon-mail {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+
+    & ~ .custom-text-box__icon-phone {
+      fill: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    color: $black;
+    opacity: 0.3;
+    font-size: 19px;
+  }
+
+  &::-moz-placeholder {
+    color: $black;
+    opacity: 0.3;
+    font-size: 19px;
   }
 
   @media (min-width: $tablet) {
@@ -69,7 +92,7 @@
   @media (min-width: $desktop) {
     transform: translate(2px, 2px);
     font-size: 20px;
-    padding-bottom: 13px;
+    padding-bottom: 9px;
   }
 }
 

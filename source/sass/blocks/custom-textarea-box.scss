@@ -27,6 +27,28 @@
   resize: none;
   border: 2px solid $black;
   outline: none;
+  font-family: inherit;
+
+  &::-webkit-input-placeholder {
+    color: $black;
+    opacity: 0.3;
+    font-size: 17px;
+    line-height: 18px;
+
+    @media (min-width: $tablet) {
+      font-size: 19px;
+    }
+  }
+
+  &::-moz-placeholder {
+    color: $black;
+    opacity: 0.3;
+    font-size: 19px;
+
+    @media (min-width: $tablet) {
+      font-size: 19px;
+    }
+  }
 
   @media (min-width: $desktop) {
     font-size: 20px;

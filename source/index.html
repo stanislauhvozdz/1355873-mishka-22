@@ -7,6 +7,8 @@
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 <body class="page__body">
   <header class="page-header">
@@ -19,7 +21,7 @@
             <img class="page-header__image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
           </picture>
         </a>
-        <button class="page-header__nav-toggle unselectable" type="button" aria-label="Открыть меню"></button>
+        <a class="page-header__nav-toggle page-header__nav-toggle--no-js" aria-label="Открыть меню"></a>
       </div>
       <nav class="main-nav main-nav--no-js">
         <ul class="main-nav__list">
@@ -82,9 +84,15 @@
         <ul class="promo-block__list">
           <li class="promo-block__item promo-block__item--interior">
             <a class="promo-block__link" href="#">Предметы интерьера</a>
+            <svg class="promo-block__interior-icon" width="40" height="62">
+              <use xlink:href="img/sprite.svg#icon-interior"></use>
+            </svg>
           </li>
           <li class="promo-block__item promo-block__item--toys">
             <a class="promo-block__link" href="#">Детские игрушки</a>
+            <svg class="promo-block__toys-icon" width="60" height="60">
+              <use xlink:href="img/sprite.svg#icon-toys"></use>
+            </svg>
           </li>
         </ul>
       </div>
@@ -121,7 +129,7 @@
           </picture>
         </div>
         <span class="product-week__price">Цена: 990 руб.</span>
-        <button class="product-week__action button">ЗАКАЗАТЬ</button>
+        <a class="product-week__action button">ЗАКАЗАТЬ</a>
       </div>
     </section>
     <section class="about-us about-us--positioning">
@@ -183,7 +191,7 @@
           <button class="slider-control__prev" type="button" aria-label="Посмотреть предыдущий отзыв"></button>
           <button class="slider-control__next" type="button" aria-label="Посмотреть следующий отзыв"></button>
         </div>
-        <button class="customer-feedback__button button " type="button">Написать</button>
+        <a class="customer-feedback__button button" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts contacts--positioning">
@@ -199,53 +207,46 @@
         </div>
       </dl>
       <div class="contacts__map">
-        <picture class="contacts__image-source">
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-          <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x">
-          <img class="contacts__image" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" alt="Карта с адресом магазина">
-        </picture>
+        <iframe class="contacts__map-iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A36118c5a3bf25c20ff5d5776b661c19367f26ca17a03b84dbcafbbbd3a5558ae&amp;source=constructor"></iframe>
       </div>
-      <div class="button-wrapper">
-        <button class="contacts__button button" type="button">Напишите нам</button>
+      <div class="contacts__button-wrapper">
+        <a class="contacts__button button">Напишите нам</a>
       </div>
     </section>
   </main>
   <footer class="page-footer page-footer--positioning">
     <div class="container page-footer__container">
       <a class="page-footer__logo" href="#">
-        <svg class="page-footer__logo-mishka" width="102" height="34">
+        <svg class="page-footer__logo-mishka" width="102" height="34" aria-label="Перейти на главную страницу">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-instagram" width="22" height="22">
+            <svg class="page-footer__icon-instagram" width="22" height="22" aria-label="Мы в инстаграме">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-fb" width="15" height="28">
+            <svg class="page-footer__icon-fb" width="15" height="28" aria-label="Наша группа в фэйсбуке">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-twitter" width="23" height="20">
+            <svg class="page-footer__icon-twitter" width="23" height="20" aria-label="Наша страничка в твиттере">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg class="page-footer__icon-htmlacademy" width="27" height="34">
+        <svg class="page-footer__icon-htmlacademy" width="27" height="34" aria-label="Узнать подробнее о курсах HTML Academy">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
@@ -260,21 +261,21 @@
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер S">
               S
-              <input class="custom-radio__input visually-hidden" type="radio" name="size" checked>
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="S" checked>
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер M">
               M
-              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="M">
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер L">
               L
-              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="L">
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>

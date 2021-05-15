@@ -1,5 +1,6 @@
 .main-nav {
   display: none;
+  grid-area: main-navigation;
 
   &--hidden {
     display: block;
@@ -11,10 +12,6 @@
 
   @media (min-width: $tablet) {
     display: block;
-    order: 3;
-    position: absolute;
-    left: 50px;
-    bottom: -77px;
     z-index: 5;
   }
 
@@ -62,10 +59,13 @@
 
   @media (min-width: $tablet) {
     box-shadow: none;
-    margin-right: 36px;
+    margin-right: 37px;
+    padding: 20px 0;
   }
 
   @media (min-width: $desktop) {
+    padding: 32px 0;
+
     &:not(:last-of-type) {
       margin-right: 36px;
       padding-right: 35px;

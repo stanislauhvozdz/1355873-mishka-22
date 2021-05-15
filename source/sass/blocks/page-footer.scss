@@ -6,7 +6,11 @@
   padding: 28px 0;
 
   @media (min-width: $tablet) {
-    padding: 50px 0;
+    padding: 52px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 51px 0;
   }
 }
 
@@ -77,6 +81,18 @@
   color: $black;
   text-align: center;
 
+  &:hover {
+    .page-footer__icon-htmlacademy {
+      fill: $color-secondary-hover;
+    }
+  }
+
+  &:active {
+    .page-footer__icon-htmlacademy {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: $tablet) {
     transform: translate(-1px, -3px);
     text-align: right;
@@ -124,13 +140,5 @@
 
   @media (min-width: $desktop) {
     transform: translate(0, -2px) scale(1.5);
-  }
-
-  &:hover {
-    fill: $color-secondary-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
   }
 }

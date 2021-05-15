@@ -63,12 +63,13 @@
 
   &--order-form {
     left: 0;
-    top: -20px;
+    top: -10px;
   }
 
   @media (min-width: $tablet) {
     width: 52px;
     height: 52px;
+    top: -19px;
   }
 }
 

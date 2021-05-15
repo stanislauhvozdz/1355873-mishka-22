@@ -1,13 +1,12 @@
 .minor-nav {
+  grid-area: minor-navigation;
+
   &--hidden {
     display: none;
   }
 
   @media (min-width: $desktop) {
     display: block;
-    position: absolute;
-    left: 50px;
-    bottom: -42px;
     z-index: 5;
   }
 }

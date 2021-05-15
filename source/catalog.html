@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -20,7 +23,7 @@
             <img class="page-header__image" src="img/mishka-logo-mobile.svg" alt="Магазин Мишка">
           </picture>
         </a>
-        <button class="page-header__nav-toggle unselectable" type="button" aria-label="Открыть меню"></button>
+        <a class="page-header__nav-toggle page-header__nav-toggle--no-js" aria-label="Открыть меню"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
@@ -79,23 +82,27 @@
           <li class="catalog-list__item">
             <article class="card-product">
               <div class="card-product__image-box">
-                <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-1@1x.webp 1x, img/photo-catalog-desktop-1@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-1@1x.webp 1x, img/photo-catalog-tablet-1@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="photo-catalog-mobile-1@1x.webp 1x, img/photo-catalog-mobile-1@2x.webp 2x">
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-1@1x.png 1x, img/photo-catalog-desktop-1@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-1@1x.png 1x, img/photo-catalog-tablet-1@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-1@1x.png"
-                    srcset="img/photo-catalog-mobile-1@2x.png 2x" alt="Вязаный зайчик в синем трико">
-                </picture>
+                <a href="#" class="card-product__link">
+                  <picture class="card-product__image-source">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-1@1x.webp 1x, img/photo-catalog-desktop-1@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-1@1x.webp 1x, img/photo-catalog-tablet-1@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="photo-catalog-mobile-1@1x.webp 1x, img/photo-catalog-mobile-1@2x.webp 2x">
+                    <source media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-1@1x.png 1x, img/photo-catalog-desktop-1@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-1@1x.png 1x, img/photo-catalog-tablet-1@2x.png 2x">
+                    <img class="card-product__image" src="img/photo-catalog-mobile-1@1x.png"
+                      srcset="img/photo-catalog-mobile-1@2x.png 2x" alt="Вязаный зайчик в синем трико">
+                  </picture>
+                </a>
               </div>
               <div class="card-product__content-box">
-                <h2 class="card-product__product-name">Зайчик-попрыгайчик</h2>
+                <a href="#" class="card-product__link">
+                  <h2 class="card-product__product-name">Зайчик-попрыгайчик</h2>
+                </a>
                 <p class="card-product__description">Рост 30 см, вес 200 г</p>
                 <div class="card-product__cost">
                   <span class="card-product__price">1 200 руб.</span>
@@ -111,23 +118,27 @@
           <li class="catalog-list__item">
             <article class="card-product">
               <div class="card-product__image-box">
-                <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-2@1x.webp 1x, img/photo-catalog-desktop-2@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-2@1x.webp 1x, img/photo-catalog-tablet-2@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="photo-catalog-mobile-2@1x.webp 1x, img/photo-catalog-mobile-2@2x.webp 2x">
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-2@1x.png 1x, img/photo-catalog-desktop-2@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-2@1x.png 1x, img/photo-catalog-tablet-2@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-2@1x.png"
-                    srcset="img/photo-catalog-mobile-2@2x.png 2x" alt="Вязаный корзина красно-белого цвета">
-                </picture>
+                <a href="#" class="card-product__link">
+                  <picture class="card-product__image-source">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-2@1x.webp 1x, img/photo-catalog-desktop-2@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-2@1x.webp 1x, img/photo-catalog-tablet-2@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="photo-catalog-mobile-2@1x.webp 1x, img/photo-catalog-mobile-2@2x.webp 2x">
+                    <source media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-2@1x.png 1x, img/photo-catalog-desktop-2@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-2@1x.png 1x, img/photo-catalog-tablet-2@2x.png 2x">
+                    <img class="card-product__image" src="img/photo-catalog-mobile-2@1x.png"
+                      srcset="img/photo-catalog-mobile-2@2x.png 2x" alt="Вязаный корзина красно-белого цвета">
+                  </picture>
+                </a>
               </div>
               <div class="card-product__content-box">
-                <h2 class="card-product__product-name">Корзинка для белья</h2>
+                <a href="#" class="card-product__link">
+                  <h2 class="card-product__product-name">Корзинка для белья</h2>
+                </a>
                 <p class="card-product__description">Диаметр 15 см, высота 10 см</p>
                 <div class="card-product__cost">
                   <span class="card-product__price">690 руб.</span>
@@ -143,24 +154,27 @@
           <li class="catalog-list__item">
             <article class="card-product">
               <div class="card-product__image-box">
-                <picture class="card-product__image-source">
-                  <source type="image/webp" media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-3@1x.webp 1x, img/photo-catalog-desktop-3@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-3@1x.webp 1x, img/photo-catalog-tablet-3@2x.webp 2x">
-                  <source type="image/webp"
-                    srcset="photo-catalog-mobile-3@1x.webp 1x, img/photo-catalog-mobile-3@2x.webp 2x">
-                  <source media="(min-width: 1150px)"
-                    srcset="img/photo-catalog-desktop-3@1x.png 1x, img/photo-catalog-desktop-3@2x.png 2x">
-                  <source media="(min-width: 768px)"
-                    srcset="img/photo-catalog-tablet-3@1x.png 1x, img/photo-catalog-tablet-3@2x.png 2x">
-                  <img class="card-product__image" src="img/photo-catalog-mobile-3@1x.png"
-                    srcset="img/photo-catalog-mobile-3@2x.png 2x" alt="Вязаный корзина зелено-белого цвета">
-                </picture>
+                <a href="#" class="card-product__link">
+                  <picture class="card-product__image-source">
+                    <source type="image/webp" media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-3@1x.webp 1x, img/photo-catalog-desktop-3@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-3@1x.webp 1x, img/photo-catalog-tablet-3@2x.webp 2x">
+                    <source type="image/webp"
+                      srcset="photo-catalog-mobile-3@1x.webp 1x, img/photo-catalog-mobile-3@2x.webp 2x">
+                    <source media="(min-width: 1150px)"
+                      srcset="img/photo-catalog-desktop-3@1x.png 1x, img/photo-catalog-desktop-3@2x.png 2x">
+                    <source media="(min-width: 768px)"
+                      srcset="img/photo-catalog-tablet-3@1x.png 1x, img/photo-catalog-tablet-3@2x.png 2x">
+                    <img class="card-product__image" src="img/photo-catalog-mobile-3@1x.png"
+                      srcset="img/photo-catalog-mobile-3@2x.png 2x" alt="Вязаный корзина зелено-белого цвета">
+                  </picture>
+                </a>
               </div>
               <div class="card-product__content-box">
-                <h2 class="card-product__product-name card-product__product-name--big-name">Большая корзинка для игрушек
-                </h2>
+                <a href="#" class="card-product__link">
+                  <h2 class="card-product__product-name card-product__product-name--big-name">Большая корзинка для игрушек</h2>
+                </a>
                 <p class="card-product__description">Диаметр 30 см, высота 30 см</p>
                 <div class="card-product__cost">
                   <span class="card-product__price">1 500 руб.</span>
@@ -186,43 +200,44 @@
         </div>
         <p class="production-process-section__description">По просьбам наших любимых фолловеров мы сняли для вас
           подробное видео о том, как появляются наши товары.</p>
-        <button class="button production-process-section__button" type="button">Сделать заказ</button>
+        <a class="button production-process-section__button">Сделать заказ</a>
       </section>
     </div>
   </main>
   <footer class="page-footer page-footer--positioning">
     <div class="container page-footer__container">
       <a class="page-footer__logo" href="#">
-        <svg class="page-footer__logo-mishka" width="102" height="34">
+        <svg class="page-footer__logo-mishka" width="102" height="34" aria-label="Перейти на главную страницу">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
       <ul class="page-footer__social-list">
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-instagram" width="22" height="22">
+            <svg class="page-footer__icon-instagram" width="22" height="22" aria-label="Мы в инстаграме">
               <use xlink:href="img/sprite.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-fb" width="15" height="28">
+            <svg class="page-footer__icon-fb" width="15" height="28" aria-label="Наша группа в фэйсбуке">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
           </a>
         </li>
         <li class="page-footer__item">
           <a class="page-footer__link" href="#">
-            <svg class="page-footer__icon-twitter" width="23" height="20">
+            <svg class="page-footer__icon-twitter" width="23" height="20" aria-label="Наша страничка в твиттере">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/htmlcss">
+      <a class="page-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
         Разработано
-        <svg class="page-footer__icon-htmlacademy" width="27" height="34">
+        <svg class="page-footer__icon-htmlacademy" width="27" height="34"
+          aria-label="Узнать подробнее о курсах HTML Academy">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
@@ -237,21 +252,21 @@
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер S">
               S
-              <input class="custom-radio__input visually-hidden" type="radio" name="size" checked>
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="S" checked>
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер M">
               M
-              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="M">
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>
           <li class="form-choice-size__item">
             <label class="custom-radio custom-radio--modal" aria-label="Размер L">
               L
-              <input class="custom-radio__input visually-hidden" type="radio" name="size">
+              <input class="custom-radio__input visually-hidden" type="radio" name="size" value="L">
               <span class="custom-radio__checkmark custom-radio__checkmark--modal"></span>
             </label>
           </li>
