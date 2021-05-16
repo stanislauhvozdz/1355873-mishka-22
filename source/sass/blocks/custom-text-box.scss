@@ -54,6 +54,7 @@
   line-height: 18px;
   outline: none;
   background-color: transparent;
+  padding-right: 60px;
 
   &:focus {
     border-color: $color-secondary-hover;
@@ -72,27 +73,40 @@
   &::-webkit-input-placeholder {
     color: $black;
     opacity: 0.3;
-    font-size: 19px;
+    font-size: 17px;
+    line-height: 18;
+
+    @media (min-width: $tablet) {
+      font-size: 19px;
+    }
   }
 
   &::-moz-placeholder {
     color: $black;
     opacity: 0.3;
-    font-size: 19px;
+    font-size: 17px;
+
+    @media (min-width: $tablet) {
+      font-size: 19px;
+    }
   }
 
   @media (min-width: $tablet) {
     padding-left: 18px;
     font-size: 19px;
     padding-top: 14px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
     width: 100%;
   }
 
   @media (min-width: $desktop) {
-    transform: translate(2px, 2px);
     font-size: 20px;
-    padding-bottom: 9px;
+    transform: translate(1px, -1px);
+    padding-bottom: 11px;
+
+    &--phone {
+      transform: translate(-1px, -3px);
+    }
   }
 }
 
@@ -115,11 +129,11 @@
   transform: translate(-7px, -14px);
 
   @media (min-width: $tablet) {
-    transform: translate(-26px, -16px);
+    transform: translate(-26px, -13px);
   }
 
   @media (min-width: $desktop) {
-    transform: translate(-8px, -12px);
+    transform: translate(-8px, -16px);
   }
 }
 
@@ -132,10 +146,10 @@
   transform: translate(-3px, -10px);
 
   @media (min-width: $tablet) {
-    transform: translate(-22px, -11px);
+    transform: translate(-22px, -8px);
   }
 
   @media (min-width: $desktop) {
-    transform: translate(-4px, -6px);
+    transform: translate(-4px, -10px);
   }
 }

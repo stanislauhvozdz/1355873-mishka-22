@@ -1,5 +1,4 @@
 .main-slogan {
-  margin-top: 82px;
   border-top: 1px solid rgba($black, 0.2);
   background-color: $color-bg-footer;
   position: relative;
@@ -18,6 +17,7 @@
     z-index: 2;
 
     @media (min-width: $tablet) {
+      margin-top: 82px;
       height: 24px;
       background-image: url("../img/zigzag-fill-tablet.svg");
     }

@@ -15,7 +15,7 @@
   <header class="page-header">
     <div class="container container--no-padding page-header__container">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="index.html">
+        <a href="index.html" class="page-header__logo">
           <picture class="page-header__image-source">
             <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -24,17 +24,17 @@
         </a>
         <a class="page-header__nav-toggle page-header__nav-toggle--no-js" aria-label="Открыть меню"></a>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--no-js">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="site-form.html">Вязание на заказ</a>
+            <a class="main-nav__link" href="order-form.html">Вязание на заказ</a>
           </li>
         </ul>
       </nav>
-      <nav class="user-nav">
+      <nav class="user-nav user-nav--no-js">
         <ul class="user-nav__list">
           <li class="user-nav__item user-nav__item--search">
             <a class="user-nav__link" href="#">
@@ -177,7 +177,7 @@
           <fieldset class="site-form__fieldset site-form__fieldset--phone">
             <legend class="site-form__legend site-form__legend--phone">тел</legend>
             <label class="custom-text-box custom-text-box--positioning">
-              <input class="custom-text-box__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+              <input class="custom-text-box__input custom-text-box__input--phone" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
               <svg class="custom-text-box__icon-phone" width="25" height="24">
                 <use xlink:href="img/sprite.svg#icon-phone"></use>
               </svg>

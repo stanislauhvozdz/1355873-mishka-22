@@ -1,6 +1,5 @@
 .promo-block {
   border-top: 1px solid rgba($black, 0.2);
-  margin-top: 82px;
   position: relative;
   margin-bottom: 32px;
   background-color: $color-bg-promo-block;
@@ -140,6 +139,26 @@
   @media (min-width: $tablet) {
     flex-basis: 50%;
     padding: 27px 0 34px 36px;
+  }
+}
+
+.promo-block__item--interior {
+  &:hover {
+    background-color: $color-secondary-200;
+  }
+
+  &:active {
+    background-color: $color-secondary-200;
+  }
+}
+
+.promo-block__item--toys {
+  &:hover {
+    background-color: $color-secondary-hover;
+  }
+
+  &:active {
+    background-color: $color-secondary-hover;
   }
 }
 
